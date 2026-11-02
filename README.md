@@ -1,0 +1,2 @@
+# locations-registry
+locations-registry
