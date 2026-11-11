@@ -19,7 +19,7 @@
 # Profile URL: https://assets.ve.ismar.cnr.it/semantic-application-profiles/location/1.0.0/profile.ttl
 # Profile version: 1.0.0
 
-locreg:AIPO_AIR_3.ttl
+locreg:AIPO_AIR_P3.ttl
     rdfs:seeAlso <https://assets.ve.ismar.cnr.it/semantic-application-profiles/location/1.0.0/profile.ttl> ;
     dcterms:conformsTo saploc: ;
     dcat:version "1.0.0" ;
@@ -40,23 +40,23 @@ locreg:AIPO_AIR_3.ttl
     # The date and time this location instance document was created
     dcterms:created "2026-11-08T10:45:37+01:00"^^xsd:dateTime ;
     # The date and time this location instance document was last modified
-    dcterms:modified "2026-11-11T16:31:28.205Z"^^xsd:dateTime .
+    dcterms:modified "2026-11-11T17:05:02.881Z"^^xsd:dateTime .
 
-locreg:AIPO_AIR_3
+locreg:AIPO_AIR_P3
     a geo:Feature ;
-    skos:notation "AIPO_AIR_3"^^xsd:string ;
+    skos:notation "AIPO_AIR_P3"^^xsd:string ;
     dcterms:identifier "4c856754-2aa9-48b9-b20b-e5217e0a86e1"^^xsd:string ;
-    rdfs:label "Darsena AIPO_AIR_3"@en ;
-    skos:prefLabel "AIPO_AIR_3 for future uses"@und ;
-    dcterms:title "Darsena AIPO_AIR_3"@en ;
+    rdfs:label "Darsena AIPO AIR P3"@en ;
+    skos:prefLabel "AIPO_AIR_P3 for future uses"@und ;
+    dcterms:title "Darsena AIPO AIR P3"@en ;
     dcterms:description "Darsena AIPO Pontelagoscuro. WGS84 ellipsoidal height: 3 metres."@en ;
     gn:countryCode "IT"^^xsd:string ;
     dcterms:isPartOf <https://w3id.org/cnr-ismar/research-infrastructures-registry/danubius-ri> ;
     geo:hasMetricSpatialAccuracy "1"^^xsd:double ;
-    geo:hasGeometry locreg:AIPO_AIR_3.ttl\#geometry-acee2176-189c-4526-84ca-53249705f627 .
+    geo:hasGeometry locreg:AIPO_AIR_P3.ttl\#geometry-acee2176-189c-4526-84ca-53249705f627 .
 
-locreg:AIPO_AIR_3.ttl\#geometry-acee2176-189c-4526-84ca-53249705f627
+locreg:AIPO_AIR_P3.ttl\#geometry-acee2176-189c-4526-84ca-53249705f627
     a geo:Geometry ;
     dcterms:identifier "acee2176-189c-4526-84ca-53249705f627"^^xsd:string ;
-    dcterms:isPartOf locreg:AIPO_AIR_3 ;
+    dcterms:isPartOf locreg:AIPO_AIR_P3 ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4979> POINT Z(11.608072 44.888296 3)"^^geo:wktLiteral .

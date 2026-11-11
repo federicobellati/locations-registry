@@ -40,15 +40,15 @@ locreg:CH_NORTH_EDGE_INLET_N2.ttl
     # The date and time this location instance document was created
     dcterms:created "2026-11-08T10:45:37+01:00"^^xsd:dateTime ;
     # The date and time this location instance document was last modified
-    dcterms:modified "2026-11-11T16:54:39.943Z"^^xsd:dateTime .
+    dcterms:modified "2026-11-11T17:03:36.544Z"^^xsd:dateTime .
 
 locreg:CH_NORTH_EDGE_INLET_N2
     a geo:Feature ;
     skos:notation "CH_NORTH_EDGE_INLET_N2"^^xsd:string ;
     dcterms:identifier "52875b1b-b206-439b-9052-69ab46777aba"^^xsd:string ;
-    rdfs:label "Chioggia Inlet North Edge_N2"@en ;
+    rdfs:label "Chioggia Inlet North Edge N2"@en ;
     skos:prefLabel "CH_NORTH_EDGE_INLET_N2 for future uses"@und ;
-    dcterms:title "Chioggia Inlet North Edge_N2"@en ;
+    dcterms:title "Chioggia Inlet North Edge N2"@en ;
     dcterms:description "Northern edge of the Chioggia Inlet. WGS84 ellipsoidal height: -2 metres."@en ;
     gn:countryCode "IT"^^xsd:string ;
     dcterms:spatial <https://marineregions.org/gazetteer.php?p=details&id=63508> ;
