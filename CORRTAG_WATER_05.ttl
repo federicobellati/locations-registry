@@ -1,0 +1,48 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix gn: <https://www.geonames.org/ontology#> .
+@prefix locreg: <https://w3id.org/cnr-ismar/locations-registry/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+locreg:CORRTAG_WATER_05.ttl dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dcterms:conformsTo <https://w3id.org/cnr-ismar/sap/location/1.0.0/> ;
+    dcterms:created "2026-11-08T10:45:37+01:00"^^xsd:dateTime ;
+    dcterms:creator <https://orcid.org/0009-0000-9657-919X> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-08T10:59:50+01:00"^^xsd:dateTime ;
+    dcterms:publisher [ a prov:Agent,
+                prov:Organization,
+                foaf:Organization ;
+            owl:sameAs <https://ror.org/02hdf6119> ;
+            foaf:name "Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche" ] ;
+    dcterms:rights "The licence (dcterms:license) applies to this metadata record only; "@en ;
+    rdfs:seeAlso <https://assets.ve.ismar.cnr.it/semantic-application-profiles/location/1.0.0/profile.ttl> ;
+    dcat:contactPoint [ a vcard:Individual ;
+            vcard:fn "Federico Bellati" ;
+            vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
+    dcat:version "1.0.0" .
+
+locreg:CORRTAG_WATER_05 a geo:Feature ;
+    rdfs:label "CORRTAG_WATER_05"@en ;
+    dcterms:description "Station at the mouth of the Tagliamento River. WGS84 ellipsoidal height: -0.5 metres."@en ;
+    dcterms:identifier "f730ca58-5a8b-45a0-b259-e8ce01f49715"^^xsd:string ;
+    dcterms:title "CORRTAG_WATER_05"@en ;
+    geo:hasGeometry <https://w3id.org/cnr-ismar/locations-registry/CORRTAG_WATER_05.ttl#geometry-e7898a1a-a3b3-4608-8020-085db0889a7a> ;
+    geo:hasMetricSpatialAccuracy 1 ;
+    skos:notation "CORRTAG_WATER_05"^^xsd:string ;
+    skos:prefLabel "CORRTAG_WATER_05 for future uses"@und ;
+    gn:countryCode "IT"^^xsd:string .
+
+<https://w3id.org/cnr-ismar/locations-registry/CORRTAG_WATER_05.ttl#geometry-e7898a1a-a3b3-4608-8020-085db0889a7a> a geo:Geometry ;
+    dcterms:identifier "e7898a1a-a3b3-4608-8020-085db0889a7a"^^xsd:string ;
+    dcterms:isPartOf locreg:CORRTAG_WATER_05 ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[13.0854,45.6547]}"^^geo:geoJSONLiteral ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4979> POINT Z(13.085400000000 45.654700000000 -0.5)"^^geo:wktLiteral .
+

@@ -1,0 +1,48 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix gn: <https://www.geonames.org/ontology#> .
+@prefix locreg: <https://w3id.org/cnr-ismar/locations-registry/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+locreg:CARMASON_ZERO_RIVER_1.ttl dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dcterms:conformsTo <https://w3id.org/cnr-ismar/sap/location/1.0.0/> ;
+    dcterms:created "2026-11-08T10:45:37+01:00"^^xsd:dateTime ;
+    dcterms:creator <https://orcid.org/0009-0000-9657-919X> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-08T10:59:50+01:00"^^xsd:dateTime ;
+    dcterms:publisher [ a prov:Agent,
+                prov:Organization,
+                foaf:Organization ;
+            owl:sameAs <https://ror.org/02hdf6119> ;
+            foaf:name "Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche" ] ;
+    dcterms:rights "The licence (dcterms:license) applies to this metadata record only; "@en ;
+    rdfs:seeAlso <https://assets.ve.ismar.cnr.it/semantic-application-profiles/location/1.0.0/profile.ttl> ;
+    dcat:contactPoint [ a vcard:Individual ;
+            vcard:fn "Federico Bellati" ;
+            vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
+    dcat:version "1.0.0" .
+
+locreg:CARMASON_ZERO_RIVER_1 a geo:Feature ;
+    rdfs:label "CARMASON_ZERO_RIVER_1"@en ;
+    dcterms:description "CARMASON ZERO RIVER. WGS84 ellipsoidal height: -1 metres."@en ;
+    dcterms:identifier "531e11ed-9e21-4671-8d09-8086284d24f5"^^xsd:string ;
+    dcterms:title "CARMASON_ZERO_RIVER_1"@en ;
+    geo:hasGeometry <https://w3id.org/cnr-ismar/locations-registry/CARMASON_ZERO_RIVER_1.ttl#geometry-58ab9eb6-6b09-4d22-8880-1e10fa9998a9> ;
+    geo:hasMetricSpatialAccuracy 1 ;
+    skos:notation "CARMASON_ZERO_RIVER_1"^^xsd:string ;
+    skos:prefLabel "CARMASON_ZERO_RIVER_1 for future uses"@und ;
+    gn:countryCode "IT"^^xsd:string .
+
+<https://w3id.org/cnr-ismar/locations-registry/CARMASON_ZERO_RIVER_1.ttl#geometry-58ab9eb6-6b09-4d22-8880-1e10fa9998a9> a geo:Geometry ;
+    dcterms:identifier "58ab9eb6-6b09-4d22-8880-1e10fa9998a9"^^xsd:string ;
+    dcterms:isPartOf locreg:CARMASON_ZERO_RIVER_1 ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[12.378547,45.554264]}"^^geo:geoJSONLiteral ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4979> POINT Z(12.378547000000 45.554264000000 -1)"^^geo:wktLiteral .
+

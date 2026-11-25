@@ -1,0 +1,49 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix gn: <https://www.geonames.org/ontology#> .
+@prefix locreg: <https://w3id.org/cnr-ismar/locations-registry/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+locreg:MAL_SOUTH_EDGE_INLET.ttl dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dcterms:conformsTo <https://w3id.org/cnr-ismar/sap/location/1.0.0/> ;
+    dcterms:created "2026-11-08T10:45:37+01:00"^^xsd:dateTime ;
+    dcterms:creator <https://orcid.org/0009-0000-9657-919X> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-08T10:59:50+01:00"^^xsd:dateTime ;
+    dcterms:publisher [ a prov:Agent,
+                prov:Organization,
+                foaf:Organization ;
+            owl:sameAs <https://ror.org/02hdf6119> ;
+            foaf:name "Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche" ] ;
+    dcterms:rights "The licence (dcterms:license) applies to this metadata record only; "@en ;
+    rdfs:seeAlso <https://assets.ve.ismar.cnr.it/semantic-application-profiles/location/1.0.0/profile.ttl> ;
+    dcat:contactPoint [ a vcard:Individual ;
+            vcard:fn "Federico Bellati" ;
+            vcard:hasEmail <mailto:federico.bellati@cnr.it> ] ;
+    dcat:version "1.0.0" .
+
+locreg:MAL_SOUTH_EDGE_INLET a geo:Feature ;
+    rdfs:label "MAL_SOUTH_EDGE_INLET"@en ;
+    dcterms:description "Southern edge of the Malamocco Inlet. WGS84 ellipsoidal height: -2 metres."@en ;
+    dcterms:identifier "ed66ef16-6120-4b4f-af80-96c45a45c5f0"^^xsd:string ;
+    dcterms:spatial <https://marineregions.org/gazetteer.php?p=details&id=63508> ;
+    dcterms:title "MAL_SOUTH_EDGE_INLET"@en ;
+    geo:hasGeometry <https://w3id.org/cnr-ismar/locations-registry/MAL_SOUTH_EDGE_INLET.ttl#geometry-de6e3db9-4154-4161-bdd5-b16a47ba282e> ;
+    geo:hasMetricSpatialAccuracy 1 ;
+    skos:notation "MAL_SOUTH_EDGE_INLET"^^xsd:string ;
+    skos:prefLabel "MAL_SOUTH_EDGE_INLET for future uses"@und ;
+    gn:countryCode "IT"^^xsd:string .
+
+<https://w3id.org/cnr-ismar/locations-registry/MAL_SOUTH_EDGE_INLET.ttl#geometry-de6e3db9-4154-4161-bdd5-b16a47ba282e> a geo:Geometry ;
+    dcterms:identifier "de6e3db9-4154-4161-bdd5-b16a47ba282e"^^xsd:string ;
+    dcterms:isPartOf locreg:MAL_SOUTH_EDGE_INLET ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[12.32811,45.333646]}"^^geo:geoJSONLiteral ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4979> POINT Z(12.328110000000 45.333646000000 -2)"^^geo:wktLiteral .
+
